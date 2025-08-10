@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV to JSON converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <!-- CSV to JSON -->
+  <body>
+    <div>
+      <!-- Add the button for CSV to JSON conversion -->
+      <button class="N1" type="button" onclick="convertCsvAndDisplay()">
+        CSV to JSON
+      </button>
+      <a href="index2.html"
+        ><button class="N1" type="button">JSON to CSV</button></a>
+    </div>
+    <br />
+    <div>
+      <!-- Add the file input for CSV file upload -->
+      <form id="fileUploadForm">
+        <center>
+          <input type="file" accept=".csv" id="fileInput" />
+          <button class="N1" type="button" onclick="uploadCsvFile()">
+            Upload
+          </button>
+        </center>
+      </form>
+    </div>
+    <br />
+
+    <div>
+      <table class="N4" width="1200" height="500" align="center">
+        <tr>
+          <td>
+            <label for="csvInput">Output:</label>
+            <button id="copyButton">Copy Text</button>
+            <div id="jsonOutput" class="output"></div>
+          </td>
+        </tr>
+  </table>
+</div>
+<br />
+
+<div>
+  <tr>
+    <td>
+      <!-- Add the download button -->
+      <a id="downloadLink" style="display: none;">
+          <button class="N1" type="button" onclick="downloadJson()">Download JSON</button>
+      </a>
+    </td>
+  </tr>
+</div>
+
+    <!-- Include the script for CSV to JSON conversion and file upload -->
+    <script src="./csv2json.js"></script>
+  </body>
+</html>

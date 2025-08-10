@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON to CSV Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <a href="index1.html"
+        ><button class="N1" type="button">CSV to JSON</button></a
+      >
+      <button class="N1" type="button">JSON to CSV</button>
+    </div>
+    <br />
+    <div class="N2">
+      <table width="1200" height="250" align="center">
+        <tr>
+          <td>
+            <label for="jsonInput">Input JSON:</label>
+            <textarea id="jsonInput" rows="5" cols="50"></textarea>
+            <br />
+
+            <button class="N3" onclick="convertJsonToCsv()">
+              Convert to CSV
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="N2">
+      <button
+        class="N5"
+        type="button"
+        id="downloadButton"
+        onclick="downloadCsv()"
+      >
+        <a id="downloadLink" style="text-decoration: none">Download CSV</a>
+      </button>
+      <table class="N4" width="1200" height="250" align="center">
+        <tr>
+          <td>
+            <label for="jsonInput">Output:</label>
+            <div id="csvOutput" class="output">
+              <table id="csvTable"></table>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./json2csv.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+.N2 {
+  margin-bottom: 1%;
+}
+
+.N4 {
+  border: black solid;
+}
+body {
+  background-color: white;
+}
+textarea {
+  width: 1185px;
+  height: 182px;
+}
+#csvOutput {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .output {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+textarea,
+input {
+  resize: none;
+  outline: none;
+  transition: 0.3s linear;
+  padding: 10px;
+  border-radius: 5px;
+}
+textarea:focus,
+input:focus {
+  border-color: orange;
+}
+form center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.N3 {
+  margin-left: 88%;
+  margin-top: 10px;
+}
+.N5 {
+  margin-bottom: 15px;
+  margin-left: 1095px;
+}
+button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #266aa5;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.297);
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 0px white;
+}
